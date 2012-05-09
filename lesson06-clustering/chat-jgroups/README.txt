@@ -1,14 +1,3 @@
-/home/rhusar/Documents/jgroups-prezo/JGroupsDemos/01-APIDemo/APIDemo/target
+IPv4:
+java -Duser.name="Radoslav Husar" -Djava.net.preferIPv4Stack=true -classpath target/lesson06-chat-jgroups-0.0.1-SNAPSHOT.jar:target/dependency/jgroups-3.0.7.Final.jar cz.muni.fi.pv243.chatjgroups/Chat
 
-java -classpath APIDemo-1.0-SNAPSHOT.jar:dependency/jgroups-3.0.0.CR5.jar com.radoslavhusar.jgroups.apidemo.SimpleChat
-
-
-
-
-IPV4:
-java -Djava.net.preferIPv4Stack=true -classpath APIDemo-1.0-SNAPSHOT.jar:dependency/jgroups-3.0.0.CR5.jar com.radoslavhusar.jgroups.apidemmpleChat
-
-
-
-Rado:
-java -Duser.name=Rado -Djava.net.preferIPv4Stack=true -classpath APIDemo-1.0-SNAPSHOT.jar:dependency/jgroups-3.0.0.CR5.jar com.radoslavhusar.jgroups.apidemo/SimpleChat

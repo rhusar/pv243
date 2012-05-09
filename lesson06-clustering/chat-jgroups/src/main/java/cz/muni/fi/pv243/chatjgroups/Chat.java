@@ -40,7 +40,7 @@ public class Chat extends ReceiverAdapter {
 
     private void eventLoop() {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        while (true) {
+        for (;;) {
             try {
                 System.out.flush();
                 String line = in.readLine().toLowerCase();
