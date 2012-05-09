@@ -13,9 +13,9 @@
     <modules>
         <module>chat-jgroups</module>
         <module>highly-available-webapp</module>
+        <module>remote-ejb</module>
         <!--
         <module>optional-modcluster</module>
-        <module>remote-ejb</module>
         -->
     </modules>
     
