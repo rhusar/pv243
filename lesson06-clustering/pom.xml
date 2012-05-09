@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cz.muni.fi.pv243</groupId>
-    <artifactId>lesson06</artifactId>
+    <artifactId>lesson06-aggregator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>PV243 Lesson 06 - Clustering</name>
@@ -14,9 +14,6 @@
         <module>chat-jgroups</module>
         <module>highly-available-webapp</module>
         <module>remote-ejb</module>
-        <!--
-        <module>optional-modcluster</module>
-        -->
     </modules>
     
     <properties>
@@ -45,15 +42,13 @@
     <profiles>
         <profile>
             <repositories>
-            <!-- The JBoss Community public repository is a composite repository 
-               of several major repositories -->
-            <!-- see http://community.jboss.org/wiki/MavenGettingStarted-Users -->
+                <!-- The JBoss Community public repository is a composite repository of several major repositories -->
+                <!-- see http://community.jboss.org/wiki/MavenGettingStarted-Users -->
                 <repository>
                     <id>jboss-public-repository</id>
                     <name>JBoss Repository</name>
                     <url>http://repository.jboss.org/nexus/content/groups/public</url>
-               <!-- These optional flags are designed to speed up your builds 
-                  by reducing remote server calls -->
+                    <!-- These optional flags are designed to speed up your builds by reducing remote server calls -->
                     <releases>
                     </releases>
                     <snapshots>
@@ -75,11 +70,9 @@
                 </pluginRepository>
             </pluginRepositories>
 
-         <!-- An optional Arquillian testing profile that executes tests 
-            in your JBoss AS instance -->
-         <!-- This profile will start a new JBoss AS instance, and execute 
-            the test, shutting it down when done -->
-         <!-- Run with: mvn clean test -Parq-jbossas-managed -->
+            <!-- An optional Arquillian testing profile that executes tests in your JBoss AS instance -->
+            <!-- This profile will start a new JBoss AS instance, and execute the test, shutting it down when done -->
+            <!-- Run with: mvn clean test -Parq-jbossas-managed -->
             <id>arq-jbossas-managed</id>
             <dependencies>
                 <dependency>
@@ -92,18 +85,15 @@
         </profile>
 
         <profile>
-         <!-- We add the JBoss repository as we need the JBoss AS connectors 
-            for Arquillian -->
+            <!-- We add the JBoss repository as we need the JBoss AS connectors for Arquillian -->
             <repositories>
-            <!-- The JBoss Community public repository is a composite repository 
-               of several major repositories -->
-            <!-- see http://community.jboss.org/wiki/MavenGettingStarted-Users -->
+                <!-- The JBoss Community public repository is a composite repository of several major repositories -->
+                <!-- see http://community.jboss.org/wiki/MavenGettingStarted-Users -->
                 <repository>
                     <id>jboss-public-repository</id>
                     <name>JBoss Repository</name>
                     <url>http://repository.jboss.org/nexus/content/groups/public</url>
-               <!-- These optional flags are designed to speed up your builds 
-                  by reducing remote server calls -->
+                    <!-- These optional flags are designed to speed up your builds by reducing remote server calls -->
                     <releases>
                     </releases>
                     <snapshots>
